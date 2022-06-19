@@ -4,7 +4,11 @@
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" ./src",
+    "lint:prettier": "prettier --check ./src",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lint:fix": "prettier --write --list-different . && npm run lint:js --fix"
   },
   "dependencies": {
     "unplugin-vue-components": "^0.19.6",
@@ -13,6 +17,11 @@
     "vuetify": "^2.6.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.1.1",
     "sass": "~1.32",
     "vite": "^2.9.12",
     "vue-template-compiler": "^2.6.14"

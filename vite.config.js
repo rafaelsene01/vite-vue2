@@ -3,8 +3,9 @@ import { resolve } from "path";
 import { VuetifyResolver } from "unplugin-vue-components/resolvers";
 import Components from "unplugin-vue-components/vite";
 
-const globalSassFiles = ["@/styles/variables.scss"];
-
+/**
+ * @type {import('vite').UserConfig}
+ */
 module.exports = {
   plugins: [
     createVuePlugin(),
@@ -16,6 +17,7 @@ module.exports = {
     }),
   ],
   server: {
+    host: "0.0.0.0",
     port: 8080,
   },
   resolve: {
@@ -25,10 +27,8 @@ module.exports = {
   },
   css: {
     preprocessorOptions: {
-      scss: {
-        additionalData: globalSassFiles
-          .map((src) => '@import "' + src + '";')
-          .join("\n"),
+      sass: {
+        additionalData: ['@import "@/styles/variables"', ""].join("\n"),
       },
     },
   },

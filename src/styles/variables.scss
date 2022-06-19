@@ -1,2 +1,10 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
 $font-size-root: 20px;
+
+// Overwrite example
+$headings: (
+  "h1": (
+    "size": 3.2rem,
+    "weight": 400,
+    "line-height": 77.45px,
+  ),
+);

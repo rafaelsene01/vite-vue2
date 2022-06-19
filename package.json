@@ -4,21 +4,17 @@
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
-    "dev": "vite --host"
+    "dev": "vite"
   },
   "dependencies": {
+    "unplugin-vue-components": "^0.19.6",
     "vite-plugin-vue2": "^1.9.3",
     "vue": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
     "vuetify": "^2.6.0"
   },
   "devDependencies": {
-    "@mdi/font": "^6.7.96",
     "sass": "~1.32",
-    "sass-loader": "^10.2.1",
-    "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.12",
-    "vue-cli-plugin-vuetify": "~2.5.1",
-    "vuetify-loader": "^1.7.0"
+    "vue-template-compiler": "^2.6.14"
   }
 }

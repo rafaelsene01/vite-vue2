@@ -32,4 +32,15 @@ module.exports = {
       },
     },
   },
+  test: {
+    global: true,
+    environment: "happy-dom",
+    coverage: {
+      all: true,
+      include: ["src/**/*.vue"],
+    },
+    deps: {
+      inline: ["vuetify"],
+    },
+  },
 };

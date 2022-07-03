@@ -1,5 +1,5 @@
 import { createVuePlugin } from "vite-plugin-vue2";
-import { resolve } from "path";
+import { fileURLToPath } from "url";
 import { VuetifyResolver } from "unplugin-vue-components/resolvers";
 import Components from "unplugin-vue-components/vite";
 
@@ -22,7 +22,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      "@/": `${resolve(__dirname, "./src")}/`,
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   css: {

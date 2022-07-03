@@ -6,7 +6,10 @@
           "@babel/preset-env",
           {
             "targets": {
-              "node": "current"
+              "node": "current",
+              "browsers": {
+                "ie": "11"
+              }
             }
           }
         ]

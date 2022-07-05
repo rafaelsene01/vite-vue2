@@ -11,5 +11,6 @@ module.exports = {
   parserOptions: {
     parser: "@babel/eslint-parser",
   },
+  ignorePatterns: ["**/*.d.ts"],
   rules: {},
 };

@@ -9,7 +9,8 @@
     "lint:prettier": "prettier --check ./src",
     "lint": "npm run lint:js && npm run lint:prettier",
     "lint:fix": "prettier --write --list-different ./src && npm run lint:js --fix",
-    "test": "vitest --dom --coverage"
+    "test": "vitest --dom --coverage",
+    "icon-font": "fantasticon src/assets/icons -o public/icon-font -p mdi --normalize -t woff woff2 -g css"
   },
   "dependencies": {
     "unplugin-vue-components": "^0.19.6",

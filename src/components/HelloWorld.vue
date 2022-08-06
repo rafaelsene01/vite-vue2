@@ -10,6 +10,16 @@
         />
       </v-col>
 
+      <v-col cols="12">
+        <v-text-field
+          label="Prepend"
+          prepend-icon="mdi-map-marker"
+        ></v-text-field>
+      </v-col>
+      <v-col cols="12">
+        <v-icon> mdi-map-marker </v-icon>
+      </v-col>
+
       <v-col class="mb-4">
         <h1 class="text-h1 font-weight-bold mb-3">Welcome to Vuetify</h1>
 
